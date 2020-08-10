@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daydreamer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Daydreamer</h1>
+        <div>
+            <button class="button" onClick="chooseView()">Start your year!</button>
+        </div>
+
+        <div id="buttonGroup" style="display:none">
+            <button class="button button1" onclick="location.href='file:///Users/sarahbaum/Desktop/Projects/Online%20Bullet%20Journal/hourly.html'">Hourly</button>
+            <button class="button button2" onclick="location.href='file:///Users/sarahbaum/Desktop/Projects/Online%20Bullet%20Journal/daily.html'">Daily</button>
+            <button class="button button3" onclick="location.href='file:///Users/sarahbaum/Desktop/Projects/Online%20Bullet%20Journal/weekly.html'">Weekly</button>
+            <button class="button button4" onclick="location.href='file:///Users/sarahbaum/Desktop/Projects/Online%20Bullet%20Journal/monthly.html'">Monthly</button>
+            <button class="button button5" onclick="location.href='file:///Users/sarahbaum/Desktop/Projects/Online%20Bullet%20Journal/yearly.html'">Yearly</button>
+        </div>
+
+        <script>
+            function chooseView() {
+                let buttonGroup = document.getElementById("buttonGroup");
+                if(buttonGroup.style.display === "none") {
+                    buttonGroup.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
